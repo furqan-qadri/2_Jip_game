@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+    <style>
+
+
+        body{
+            background-color: aliceblue;
+        }
+        .div-main{
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 100px;
+            margin-top:50px;
+            margin-left:100px;
+            column-gap: 10px;
+
+        }
+        .div-left{
+            background-color: lightpink;
+
+        }
+
+        .div-right{
+            background-color: lightgrey;
+        }
+
+       /*  .buttons-div{
+            display:grid;
+            column-width: 10px 10px 10px;
+            grid-template-columns: 100px 100px 100px;
+            column-gap: 15px;
+
+        } */
+
+        .buttons-div button{
+            margin-bottom: 100px;
+            height: 80px;
+            width: 100px;
+            border-radius: 5px;
+            border:1px solid black;
+        }
+
+        .diceImage{
+            width: 50px;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="div-main">
+        <div class="div-left">
+        <p>Player 1 <br> <span class="p1Total">0</span> <br></p>  
+        
+        <div>Current <br> <span class="p1Current">0</span> <br></div>
+        
+        </div>
+        <div class="div-right">
+            <p>Player 2 <br> <span class="p2Total">0</span> <br></p>  
+        
+            <div>Current <br> <span class="p2Current">0</span> <br></div>
+        </div>
+
+        <div class="buttons-div">
+            <button class="btnNewGame">New Game</button>
+            <button class="btnRollDice">Roll dice</button>
+            <button class="btnHold">Hold</button>
+            <img class="diceImage" src="./dice-1.png" alt="" >
+        </div>
+    
+       
+    </div>
+
+    <script src="script.js"></script>
+   
+
+
+    <!-- <script src="script.js"></script> -->
+
+
+</body>
+</html>
